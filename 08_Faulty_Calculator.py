@@ -1,11 +1,29 @@
 # Exercise -2 Faulty calculator
-val1 = 45*4
-val2 = int(input())
+# 45*3 = 555, 56+7= 77, 56/6 = 4
+# Design a calculator which will correctly solve all the problems except
+# the following one.
 
 
-v3 = input("Entre your 1st number")
-v4 = input("Enter your operator")
-v5 = input("Entre your 2nd no")
-cal =v3,v4,v5
-print(cal)
-
+print("Welcome to Calculator: ")
+n1 = int(input("Enter 1st No. - "))
+n2 = int(input("Enter 2nd No. - "))
+op = input("What operation would you perform : +, -, *, / ")
+c1 = 45 * 3 == 135
+if n1 == 45 and n2 == 3 and op == '*':
+    print("555")
+elif n1 == 56 and n2 == 9 and op == '+':
+    print(77)
+elif n1 == 56 and n2 == 6 and op == '/':
+    print(4)
+elif op == '+':
+    print(n1 + n2)
+elif op == '-':
+    print(n1 - n2)
+elif op == '*':
+    print(n1 * n2)
+elif op == '/':
+    print(n1 / n2)
+elif n1 == 45 and n2 == 3 and op == '*':
+    print("555")
+else:
+    print("Out of range")
